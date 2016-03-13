@@ -25,7 +25,7 @@ public class Client {
 
     public void setSocket(SocketChannel socket, Server server) {
         this.socket = socket;
-        this.server = server;
+        this.setServer(server);
     }
 
     public String getNickName() {
@@ -51,4 +51,18 @@ public class Client {
             }
         }
     }
+
+	/**
+	 * @return the server
+	 */
+	public Server getServer() {
+		return server;
+	}
+
+	/**
+	 * @param server the server to set
+	 */
+	public void setServer(Server server) {
+		this.server = server;
+	}
 }
